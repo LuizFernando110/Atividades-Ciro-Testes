@@ -30,4 +30,5 @@ jobs:
             ${{ runner.os }}-maven-
 
       - name: Executar testes com Maven
+        working-directory: ./testIdentifier
         run: mvn clean test
